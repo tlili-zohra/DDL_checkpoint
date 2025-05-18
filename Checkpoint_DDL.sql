@@ -21,7 +21,7 @@ CREATE TABLE Orders (
   Quantity NUMBER,
   Total_amount NUMBER,
   CONSTRAINT fk_Orders_Product FOREIGN KEY (Product_id) REFERENCES PRODUCT(Product_id),
-  CONSTRAINT fk_Orders_Customer FOREIGN KEY (CustomerID) REFERENCES CUSTOMER(Customer_id)
+  CONSTRAINT fk_Orders_Customer FOREIGN KEY (Customer_id) REFERENCES CUSTOMER(Customer_id)
 );
 
 #2.Add a column Category (VARCHAR2(20)) to the PRODUCT table. 
